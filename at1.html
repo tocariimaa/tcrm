@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<meta name="author" content="anonymous me"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐏</text></svg>">
+<link rel="stylesheet" href="/assets/css/page.css">
+<title>Test post number one</title>
+</head>
+<body>
+	<main class="page-container">
+		<header class="page-header">
+	<div class="header-banner">
+		<h1>tocariimaa's archive</h1>
+	</div>
+	<nav class="navbar">
+		<a href="/">Homepage</a>
+		<a href="/posts">Posts</a>
+		<a href="/about">About</a>
+	</nav>
+</header>
+
+		<article class="page-contents"><h1>Non neque sequi quo velit tempora!</h1>
+<p>Lorem ipsum dolor sit amet. Sit maxime officia est obcaecati voluptatemQui quam
+sit molestiae quos qui recusandae iure rem debitis assumenda. At omnis sapiente
+ad voluptatem dolor <a href="https://www.loremipzum.com">Eos blanditiis</a>. Eum doloribus
+ipsum in quia voluptatesqui expedita id voluptatem nihil est voluptate
+consequatur. Sed veritatis dignissimos ut libero quaerat <strong>Nam nihil eos vero
+quos ab excepturi debitis sed provident fugiat</strong>. Aut quas suscipit ea
+perferendis quiaEt eaque. Sit dolorem suscipit ex veritatis natusNam
+repellendus ad internos dolore et necessitatibus earum 33 dolor porro. In
+corporis porro et placeat aspernatur <em>Vel dolores et reiciendis rerum</em> aut
+omnis commodi est nesciunt amet non optio voluptatem.</p>
+<h2>Aut laudantium delectus et impedit accusamus!</h2>
+<p>Sed blanditiis reiciendis et debitis cupiditateSed voluptates aut nisi voluptas
+sit sunt voluptates sed aspernatur fugit aut enim inventore? Ad autem
+accusantium <a href="https://www.loremipzum.com">Ut dolor</a> et porro voluptas. Non
+laudantium voluptatem in natus voluptas <em>Ut eaque eos sint minima</em>. Non modi
+odit qui odit perspiciatisSit magnam aut excepturi ullam eos autem similique At
+galisum pariatur rem totam odio! Est molestias quidem <strong>Et modi ut autem atque
+et consequatur vero non officiis consequatur</strong>. Id beatae dolores aut quaerat
+culpaet voluptates. In odio ullamA ipsam aut suscipit fugiat est doloribus nemo
+sed accusantium consequatur aut error laboriosam et assumenda omnis.</p>
+<h3>Vel tempora excepturi sed doloremque neque et Quis quae.</h3>
+<p>Eos consequatur ipsa <strong>In veniam in consequatur obcaecati eum tenetur autem</strong>
+quo maxime facilis et reiciendis quia. 33 quas commodi et excepturi quam <em>Ut
+facilis At delectus eaque hic sunt labore</em>. Qui rerum molestiae aut quisquam
+ratione <a href="https://www.loremipzum.com">Et laudantium ut consequatur minima 33 sint omnis eos quidem
+ducimus</a>. Ea nostrum eaque rem animi sequiVel
+similique. Ab exercitationem veritatis aut enim officiisIn odio est dolorem
+quia qui autem ullam a quisquam velit?</p>
+<h4>At recusandae dolorum eum autem aliquid?</h4>
+<p>Et molestiae Quis non velit nullaut ipsa. Et quod praesentium eum temporibus
+consequunturAut possimus aut cumque enim id libero velit ut totam esse ut
+maiores nihil. Qui eius veritatis aut labore voluptatemEum quia ab dicta
+tenetur ut recusandae expedita aut voluptatibus totam! Et rerum voluptas qui
+accusamus aliquama voluptas non numquam voluptas aut impedit nemo. Qui nisi
+praesentium id tenetur aliquidSit molestiae aut maiores atque hic ullam animi
+qui Quis alias. At incidunt officia nam adipisci eveniet <em>Est aliquam ab
+accusantium alias aut laborum consequatur rem laborum magnam</em>. Ex fuga iusto
+<strong>Et placeat qui doloribus dicta qui minus excepturi</strong> non rerum ipsam qui
+assumenda magni? Ut optio mollitiaQui omnis et commodi aperiam in fugiat
+repudiandae. Et sequi reiciendisEt dolore ut omnis assumenda et velit officiis
+et rerum aspernatur qui rerum deserunt.</p>
+<h5>Quo reiciendis facere sit accusamus facilis sed Quis maiores.</h5>
+<p>In rerum autemNon rerum et enim veniam aut blanditiis facere aut quia illum in
+dolorum quis. Et deleniti animi <strong>Aut rerum ut consequuntur veritatis aut
+repellendus neque sed voluptas illo</strong> et molestias consequatur et ratione
+veritatis. Vel beatae perferendisQui veritatis eos repellat vitae. Aut nulla
+dolore sed officiis molestiasCum nostrum est veniam quaerat aut asperiores
+possimus ea repudiandae laudantium aut veniam mollitia! Ut fugiat internos <a href="https://www.loremipzum.com">Et
+beatae aut consequatur illum qui magnam molestiae</a>?
+Et doloribus quidem <em>Est possimus est sunt galisum et iure architecto</em> est
+quisquam asperiores et aliquam eligendi aut voluptatibus culpa. Qui laboriosam
+repudiandaeId porro ut totam eligendi et laboriosam quia.</p>
+<h2>Some code I guess</h2>
+<pre><code class="language-sml">(* Simple tree evaluator *)
+
+datatype TreeOp = Add | Sub | Mul | Div | Pow
+datatype Tree = Leaf of int
+              | Node of Tree * TreeOp * Tree
+
+fun intPow n p =
+  Real.round (Math.pow (Real.fromInt n, Real.fromInt p))
+
+fun eval (Leaf n) = n
+  | eval (Node(lhs, Add, rhs)) = (eval lhs) + (eval rhs)
+  | eval (Node(lhs, Sub, rhs)) = (eval lhs) - (eval rhs)
+  | eval (Node(lhs, Mul, rhs)) = (eval lhs) * (eval rhs)
+  | eval (Node(lhs, Div, rhs)) = (eval lhs) div (eval rhs)
+  | eval (Node(lhs, Pow, rhs)) = intPow (eval lhs) (eval rhs)
+
+fun assert false = raise Fail &quot;assertion failure&quot;
+  | assert true = true
+
+;
+
+let
+  (* 5 + 2 * 3 *)
+  val n1 = eval (Node(Leaf 5, Add, Node(Leaf 2, Mul, Leaf 3)))
+  val n2 = eval (Node(Leaf 3, Mul, Leaf 3))
+  (* 13 * 3 + 48 / (8 - 4) *)
+  val n3 = eval (Node(
+                   Node(Leaf 13, Mul, Leaf 3),
+                   Add,
+                   Node(Leaf 48, Div, Node(Leaf 8, Sub, Leaf 4))))
+  val n4 = eval (Leaf 39)
+  (* 2^8 * 5^4 *)
+  val n5 = eval (Node(Node(Leaf 2, Pow, Leaf 8), Add, Node(Leaf 5, Pow, Leaf 4)))
+in
+  assert (n1 = 11);
+  assert (n2 = 9);
+  assert (n3 = 51);
+  assert (n4 = 39);
+  assert (n5 = 881)
+end
+</code></pre>
+</article>
+	</main>
+	<footer class="page-container">
+	<span>All contents on this website are <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> licensed unless otherwise specified.</span>
+	<span>Powered by <a href="https://git.nadeko.net/tocariimaa/sitegen">sitegen</a>.</span>
+</footer>
+
+</body>
+</html>
