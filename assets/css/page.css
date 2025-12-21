@@ -1,0 +1,166 @@
+:root {
+	--white: #fff;
+	--dark: #1f1f28;
+	--very-dark: #16161d;
+	--red: #c34043;
+	--bright-red: #e82424;
+	--light-red: #ff5d62;
+	--blue: #7e9cd8;
+	--orange: #ffc005; /* #ff9e3b */
+	--violet: #957fb8;
+	--light-violet: #d8c1fe; /* #c69cf8 */
+	--dark-orange: ;
+	--gray: #202323;
+	--light-gray: #2f3232;
+	--light-gray2: #3f4242;
+	--dark-gray: #141818;
+	--lighter-gray: #717c7c;
+
+	--fg-color: var(--white);
+	--bg-color: var(--very-dark);
+	--bg-alt: var(--gray);
+}
+
+body {
+	font-family: sans-serif;
+	color: var(--fg-color);
+	background-color: var(--bg-color);
+	background-image: url("/assets/img/antigen.png");
+	background-position: center;
+}
+
+h1 {
+	margin: .8rem;
+}
+
+h1, h2, h3, h4 {
+	font-family: serif;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: var(--light-violet);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 80%;
+	display: block;
+}
+
+code, pre {
+	border: 2.3px solid var(--light-gray);
+	margin: 1em;
+	padding-left: 2px;
+	padding-right: 2px;
+	background-color: var(--bg-alt);
+}
+
+p {
+	margin: 1rem;
+}
+
+pre {
+	tab-size: 4;
+	margin: 20px auto;
+	max-width: 80%;
+	padding: 13px;
+	overflow: auto;
+}
+
+pre code {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.page-container span {
+	/* max-width: 70%; */
+	text-align: center;
+	display: block;
+}
+
+.page-container {
+	margin: 1rem auto;
+	max-width: 70%;
+	border: 2px solid var(--violet);
+	background-color: var(--bg-color);
+}
+
+.page-contents {
+	margin: 0;
+	padding: .1rem 1rem .1rem 1rem;
+}
+
+.header-banner {
+	position: relative;
+}
+
+.header-banner h1 {
+	text-align: center;
+}
+
+.navbar {
+	background-color: var(--light-gray);
+	max-width: 100%;
+	margin-bottom: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar a {
+	margin: .4em .8em;
+	color: var(--fg-color);
+	font-weight: bold;
+}
+
+.navbar a:hover {
+	color: var(--light-violet);
+}
+
+.post-info {
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+@media (width < 800px) {
+	.page-container {
+		max-width: 100%;
+		border-width: 2.5px;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--fg-color: var(--dark);
+		--bg-color: var(--white);
+		--bg-alt: var(--light-gray);
+	}
+	body {
+		background-image: url(/assets/img/antigenI.png);
+	}
+	a {color: var(--red); }
+	.page-container {
+		border: 2px solid var(--red);
+		background-color: var(--bg-color);
+	}
+	.navbar {
+		background: none;
+		background-color: var(--red);
+		color: var(--white);
+	}
+	.navbar a {
+		color: var(--white);
+	}
+	.navbar a:hover {
+		color: var(--white);
+	}
+}

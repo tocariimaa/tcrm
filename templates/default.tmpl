@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>{{template "head.tmpl" .}}</head>
+<body>
+	<main class="page-container">
+		{{template "page-header.tmpl" .}}
+		<article class="page-contents">{{.Body}}</article>
+	</main>
+	{{ template "page-footer.tmpl" .}}
+</body>
+</html>
